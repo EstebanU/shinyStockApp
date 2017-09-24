@@ -16,6 +16,8 @@ lastDate <<- if(weekdays(Sys.Date()) == "Saturday"){
     Sys.Date() - 1
 }else if(weekdays(Sys.Date()) == "Sunday"){
     Sys.Date() - 2
+}else if(weekdays(Sys.Date()) == "Monday"){
+    Sys.Date() - 3
 }else{
     Sys.Date()
 }
